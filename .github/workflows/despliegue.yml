@@ -36,7 +36,7 @@ jobs:
           php-version: '8.3'
           
       - name: Install dependencies
-        run: composer install
+        run: sudo apt update && sudo apt install -y composer
 
       - name: Deploy to server
         env:
